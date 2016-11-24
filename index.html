@@ -23,30 +23,33 @@
     
   .carousel-inner img {
       width: 100%; /* Set width to 100% */
-
-    margin: auto;
+      margin: auto;
       min-height:200px;
   }
 
   /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
+  @media (max-width: 600px) 
+  {
     .carousel-caption {
       display: none; 
     }
     .navbar-brand{
-
-      background-color: black;}
+    background-color: black;
+    }
+    .navbar-brand {
+    font-size: 22px;
+    padding-top: 2px;
+    }   
   }
   
-.navbar:hover { background-color:green ; 
-}
-.navbar-brand {
+  .navbar:hover { background-color:green ; 
+    }
+  .navbar-brand {
   transform: translateX(-50%);
   left: 50%;
   position: absolute;
-}
+    } 
 
-    
 /* DEMO example styles for logo image */
 .navbar-brand {
   padding: 0px;
@@ -55,11 +58,9 @@
 }
 .navbar-brand>img {
   height: 100%;
-
   width: auto;
   padding: 7px 4px;
-  
-}
+  }
 
 /* Increasing Height */
 .navbar-header {
@@ -81,26 +82,15 @@ color: white;
 font-family: Garamond;
 font-size: 25px;
 padding: 20px;
+  }
 }
- .navbar-brand {
-  padding: 0px;
-  font-size: 28px;
-  padding-top: 15px;
-}
-  
-  
-  
-}
-
-
-
   </style>
 </head>
 <body>
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header" onmouseover="this.style.background='white';" onmouseout="this.style.background='orange';">
+    <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
